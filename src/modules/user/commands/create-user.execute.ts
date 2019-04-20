@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler, EventPublisher } from '@nestjs/cqrs';
-import { CreateUserCmd } from 'src/api/commands/create-user.cmd';
-import { UserModel } from '../user.model';
-import { UserRepository } from '../user.repository';
+import { CreateUserCmd } from 'src/modules/user/commands/create-user.cmd';
+import { UserModel } from '../domain/user.model';
+import { UserRepository } from '../domain/user.repository';
 import { hashPassword } from 'src/utils/hash-password';
 import { HttpException } from '@nestjs/common';
 

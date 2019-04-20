@@ -1,9 +1,9 @@
 import { Injectable, HttpException } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { CreateUserCmd } from '../commands/create-user.cmd';
-import { CreateUserDto } from '../dto/create-user.dto';
-import { UserDto } from '../dto/user.dto';
-import { GetUsersQuery } from '../queries/get-users.query';
+import { CreateUserCmd } from './commands/create-user.cmd';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UserDto } from './dto/user.dto';
+import { GetUsersQuery } from './queries/get-users.query';
 
 @Injectable()
 export class UserService {

@@ -1,5 +1,5 @@
 import { AggregateRoot } from '@nestjs/cqrs';
-import { UserCreatedEvt } from './events/user-created.evt';
+import { UserCreatedEvt } from '../events/user-created.evt';
 
 export class UserModel extends AggregateRoot {
 	public id: string;
